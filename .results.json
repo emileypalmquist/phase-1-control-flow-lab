@@ -2,43 +2,39 @@
   "stats": {
     "suites": 4,
     "tests": 8,
-    "passes": 1,
+    "passes": 2,
     "pending": 0,
-    "failures": 7,
-    "start": "2022-01-11T16:53:24.207Z",
-    "end": "2022-01-11T16:53:24.583Z",
-    "duration": 376
+    "failures": 6,
+    "start": "2022-01-11T17:15:22.696Z",
+    "end": "2022-01-11T17:15:23.116Z",
+    "duration": 420
   },
   "tests": [
     {
       "title": "gives customers a free sample if the ride is less than or equal to 400 feet",
       "fullTitle": "index.js scuberGreetingForFeet() gives customers a free sample if the ride is less than or equal to 400 feet",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "charges 30 dollars for a distance over 2000 feet",
       "fullTitle": "index.js scuberGreetingForFeet() charges 30 dollars for a distance over 2000 feet",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 'I will gladly take your thirty bucks.'",
-        "showDiff": true,
-        "expected": "I will gladly take your thirty bucks.",
-        "stack": "AssertionError: expected undefined to equal 'I will gladly take your thirty bucks.'\n    at Context.<anonymous> (test/indexTest.js:8:46)\n    at processImmediate (internal/timers.js:461:21)"
-      }
+      "err": {}
     },
     {
       "title": "does not allow rides over 2500 feet",
       "fullTitle": "index.js scuberGreetingForFeet() does not allow rides over 2500 feet",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'No can do.'",
+        "message": "expected 'I will gladly take your thirty bucks.' to equal 'No can do.'",
         "showDiff": true,
+        "actual": "I will gladly take your thirty bucks.",
         "expected": "No can do.",
-        "stack": "AssertionError: expected undefined to equal 'No can do.'\n    at Context.<anonymous> (test/indexTest.js:12:46)\n    at processImmediate (internal/timers.js:461:21)"
+        "stack": "AssertionError: expected 'I will gladly take your thirty bucks.' to equal 'No can do.'\n    at Context.<anonymous> (test/indexTest.js:12:46)\n    at processImmediate (node:internal/timers:463:21)"
       }
     },
     {
@@ -50,7 +46,7 @@
         "message": "expected undefined to equal 'Ok, sounds good.'",
         "showDiff": true,
         "expected": "Ok, sounds good.",
-        "stack": "AssertionError: expected undefined to equal 'Ok, sounds good.'\n    at Context.<anonymous> (test/indexTest.js:18:42)\n    at processImmediate (internal/timers.js:461:21)"
+        "stack": "AssertionError: expected undefined to equal 'Ok, sounds good.'\n    at Context.<anonymous> (test/indexTest.js:18:42)\n    at processImmediate (node:internal/timers:463:21)"
       }
     },
     {
@@ -62,7 +58,7 @@
         "message": "expected undefined to equal 'No go.'",
         "showDiff": true,
         "expected": "No go.",
-        "stack": "AssertionError: expected undefined to equal 'No go.'\n    at Context.<anonymous> (test/indexTest.js:22:49)\n    at processImmediate (internal/timers.js:461:21)"
+        "stack": "AssertionError: expected undefined to equal 'No go.'\n    at Context.<anonymous> (test/indexTest.js:22:49)\n    at processImmediate (node:internal/timers:463:21)"
       }
     },
     {
@@ -74,7 +70,7 @@
         "message": "expected undefined to equal 'Thank you so much.'",
         "showDiff": true,
         "expected": "Thank you so much.",
-        "stack": "AssertionError: expected undefined to equal 'Thank you so much.'\n    at Context.<anonymous> (test/indexTest.js:28:51)\n    at processImmediate (internal/timers.js:461:21)"
+        "stack": "AssertionError: expected undefined to equal 'Thank you so much.'\n    at Context.<anonymous> (test/indexTest.js:28:51)\n    at processImmediate (node:internal/timers:463:21)"
       }
     },
     {
@@ -86,46 +82,35 @@
         "message": "expected undefined to equal 'Thank you.'",
         "showDiff": true,
         "expected": "Thank you.",
-        "stack": "AssertionError: expected undefined to equal 'Thank you.'\n    at Context.<anonymous> (test/indexTest.js:32:58)\n    at processImmediate (internal/timers.js:461:21)"
+        "stack": "AssertionError: expected undefined to equal 'Thank you.'\n    at Context.<anonymous> (test/indexTest.js:32:58)\n    at processImmediate (node:internal/timers:463:21)"
       }
     },
     {
       "title": "should return \"Bye.\" if anything else",
       "fullTitle": "index.js switchOnCharmFromTip() should return \"Bye.\" if anything else",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "message": "expected undefined to equal 'Bye.'",
         "showDiff": true,
         "expected": "Bye.",
-        "stack": "AssertionError: expected undefined to equal 'Bye.'\n    at Context.<anonymous> (test/indexTest.js:36:64)\n    at processImmediate (internal/timers.js:461:21)"
+        "stack": "AssertionError: expected undefined to equal 'Bye.'\n    at Context.<anonymous> (test/indexTest.js:36:64)\n    at processImmediate (node:internal/timers:463:21)"
       }
     }
   ],
   "pending": [],
   "failures": [
     {
-      "title": "charges 30 dollars for a distance over 2000 feet",
-      "fullTitle": "index.js scuberGreetingForFeet() charges 30 dollars for a distance over 2000 feet",
+      "title": "does not allow rides over 2500 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() does not allow rides over 2500 feet",
       "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'I will gladly take your thirty bucks.'",
+        "message": "expected 'I will gladly take your thirty bucks.' to equal 'No can do.'",
         "showDiff": true,
-        "expected": "I will gladly take your thirty bucks.",
-        "stack": "AssertionError: expected undefined to equal 'I will gladly take your thirty bucks.'\n    at Context.<anonymous> (test/indexTest.js:8:46)\n    at processImmediate (internal/timers.js:461:21)"
-      }
-    },
-    {
-      "title": "does not allow rides over 2500 feet",
-      "fullTitle": "index.js scuberGreetingForFeet() does not allow rides over 2500 feet",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 'No can do.'",
-        "showDiff": true,
+        "actual": "I will gladly take your thirty bucks.",
         "expected": "No can do.",
-        "stack": "AssertionError: expected undefined to equal 'No can do.'\n    at Context.<anonymous> (test/indexTest.js:12:46)\n    at processImmediate (internal/timers.js:461:21)"
+        "stack": "AssertionError: expected 'I will gladly take your thirty bucks.' to equal 'No can do.'\n    at Context.<anonymous> (test/indexTest.js:12:46)\n    at processImmediate (node:internal/timers:463:21)"
       }
     },
     {
@@ -137,7 +122,7 @@
         "message": "expected undefined to equal 'Ok, sounds good.'",
         "showDiff": true,
         "expected": "Ok, sounds good.",
-        "stack": "AssertionError: expected undefined to equal 'Ok, sounds good.'\n    at Context.<anonymous> (test/indexTest.js:18:42)\n    at processImmediate (internal/timers.js:461:21)"
+        "stack": "AssertionError: expected undefined to equal 'Ok, sounds good.'\n    at Context.<anonymous> (test/indexTest.js:18:42)\n    at processImmediate (node:internal/timers:463:21)"
       }
     },
     {
@@ -149,7 +134,7 @@
         "message": "expected undefined to equal 'No go.'",
         "showDiff": true,
         "expected": "No go.",
-        "stack": "AssertionError: expected undefined to equal 'No go.'\n    at Context.<anonymous> (test/indexTest.js:22:49)\n    at processImmediate (internal/timers.js:461:21)"
+        "stack": "AssertionError: expected undefined to equal 'No go.'\n    at Context.<anonymous> (test/indexTest.js:22:49)\n    at processImmediate (node:internal/timers:463:21)"
       }
     },
     {
@@ -161,7 +146,7 @@
         "message": "expected undefined to equal 'Thank you so much.'",
         "showDiff": true,
         "expected": "Thank you so much.",
-        "stack": "AssertionError: expected undefined to equal 'Thank you so much.'\n    at Context.<anonymous> (test/indexTest.js:28:51)\n    at processImmediate (internal/timers.js:461:21)"
+        "stack": "AssertionError: expected undefined to equal 'Thank you so much.'\n    at Context.<anonymous> (test/indexTest.js:28:51)\n    at processImmediate (node:internal/timers:463:21)"
       }
     },
     {
@@ -173,19 +158,19 @@
         "message": "expected undefined to equal 'Thank you.'",
         "showDiff": true,
         "expected": "Thank you.",
-        "stack": "AssertionError: expected undefined to equal 'Thank you.'\n    at Context.<anonymous> (test/indexTest.js:32:58)\n    at processImmediate (internal/timers.js:461:21)"
+        "stack": "AssertionError: expected undefined to equal 'Thank you.'\n    at Context.<anonymous> (test/indexTest.js:32:58)\n    at processImmediate (node:internal/timers:463:21)"
       }
     },
     {
       "title": "should return \"Bye.\" if anything else",
       "fullTitle": "index.js switchOnCharmFromTip() should return \"Bye.\" if anything else",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "message": "expected undefined to equal 'Bye.'",
         "showDiff": true,
         "expected": "Bye.",
-        "stack": "AssertionError: expected undefined to equal 'Bye.'\n    at Context.<anonymous> (test/indexTest.js:36:64)\n    at processImmediate (internal/timers.js:461:21)"
+        "stack": "AssertionError: expected undefined to equal 'Bye.'\n    at Context.<anonymous> (test/indexTest.js:36:64)\n    at processImmediate (node:internal/timers:463:21)"
       }
     }
   ],
@@ -193,6 +178,13 @@
     {
       "title": "gives customers a free sample if the ride is less than or equal to 400 feet",
       "fullTitle": "index.js scuberGreetingForFeet() gives customers a free sample if the ride is less than or equal to 400 feet",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "charges 30 dollars for a distance over 2000 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() charges 30 dollars for a distance over 2000 feet",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
